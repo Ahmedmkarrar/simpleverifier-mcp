@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "simpleverifier": {
+      "command": "npx",
+      "args": [
+        "-y", "mcp-remote", "https://simpleverifier.com/api/mcp",
+        "--header", "Authorization: Bearer ${SIMPLEVERIFIER_KEY}"
+      ],
+      "env": { "SIMPLEVERIFIER_KEY": "YOUR_API_KEY" }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Ahmedmkarrar/simpleverifier",
+  "title": "SimpleVerifier",
+  "description": "Verify email addresses with a live SMTP mailbox check, check phone number formats and email domains.",
+  "version": "1.2.0",
+  "websiteUrl": "https://simpleverifier.com/docs/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://simpleverifier.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Bearer followed by your SimpleVerifier API key (sv_live_...) from https://simpleverifier.com/api-keys. Leave empty to sign in with OAuth instead. API and MCP access come with the Pro, Business and Agency plans: https://simpleverifier.com/pricing",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Ahmedmkarrar/simpleverifier-mcp",
+    "source": "github"
+  }
+}

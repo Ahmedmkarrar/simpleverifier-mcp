@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "simpleverifier": {
+      "type": "http",
+      "url": "https://simpleverifier.com/api/mcp",
+      "headers": { "Authorization": "Bearer ${input:simpleverifier-key}" }
+    }
+  },
+  "inputs": [
+    { "id": "simpleverifier-key", "type": "promptString", "description": "SimpleVerifier API key", "password": true }
+  ]
+}
